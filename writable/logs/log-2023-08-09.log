@@ -1,0 +1,14 @@
+CRITICAL - 2023-08-09 14:22:27 --> Invalid file: "partials/footer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/footer.php')
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/footer', null, true)
+ 3 APPPATH\Views\master.php(35): CodeIgniter\View\View->include('partials/footer')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\master.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('master', [], true)
+ 7 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 8 APPPATH\Controllers\Home.php(9): view('home', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

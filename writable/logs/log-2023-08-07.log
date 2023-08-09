@@ -1,0 +1,90 @@
+CRITICAL - 2023-08-07 13:43:14 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-07 14:00:51 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-07 14:06:29 --> Invalid file: "mater.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mater.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('mater', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 18:52:17 --> Invalid file: "mater.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mater.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('mater', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 19:01:23 --> Invalid file: "mater.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mater.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('mater', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 19:03:21 --> Invalid file: "mater.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mater.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('mater', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 19:03:55 --> Invalid file: "mater.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mater.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('mater', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 19:07:49 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-07 19:09:05 --> Invalid file: "mater.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mater.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('mater', [], true)
+ 3 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(9): view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-07 19:10:10 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-07 19:10:34 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-08-07 19:10:42 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(227): CodeIgniter\Exceptions\FrameworkException::forMissingExtension()
+ 2 SYSTEMPATH\CodeIgniter.php(191): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 FCPATH\index.php(55): CodeIgniter\CodeIgniter->initialize()
