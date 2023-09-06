@@ -1,0 +1,143 @@
+ERROR - 2023-09-06 13:34:33 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\laragon\www\ci4curso\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\laragon\www\ci4curso\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'blog_ci', 3306, '', 0)
+#1 C:\laragon\www\ci4curso\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\ci4curso\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\ci4curso\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\ci4curso\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\ci4curso\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\ci4curso\app\Controllers\Home.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\ci4curso\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#8 C:\laragon\www\ci4curso\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\laragon\www\ci4curso\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\ci4curso\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\laragon\www\ci4curso\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\laragon\www\ci4curso\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\ci4curso\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\ci4curso\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\ci4curso\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\ci4curso\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\ci4curso\app\Controllers\Home.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\ci4curso\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\laragon\www\ci4curso\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\ci4curso\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ci4curso\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-06 13:34:33 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categories`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Home.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-06 14:01:21 --> Invalid file: "partials/category.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partials/category.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('partials/category', [], true)
+ 3 APPPATH\Cells\CategoryCell.php(11): view('partials/category', [...])
+ 4 SYSTEMPATH\View\Cell.php(279): App\Cells\CategoryCell->render()
+ 5 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\CategoryCell), 'render', [], 'App\\Cells\\CategoryCell')
+ 6 SYSTEMPATH\Common.php(1192): CodeIgniter\View\Cell->render('app\\Cells\\CategoryCell::render', [], 0, 'AppCellsCategoryCellrender40cd750bba9870f18aada2478b24840a')
+ 7 APPPATH\Views\partials\header.php(15): view_cell('app\\Cells\\CategoryCell::render')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\partials\\header.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/header', null, true)
+11 APPPATH\Views\master.php(31): CodeIgniter\View\View->include('partials/header')
+12 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\master.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('master', [], true)
+15 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(14): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+18 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 14:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 14:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 14:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 14:36:57 --> CodeIgniter\View\Cell::renderSimpleClass(): Return value must be of type string, null returned
+in SYSTEMPATH\View\Cell.php on line 306.
+ 1 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\CategoryCell), 'render', [], 'App\\Cells\\CategoryCell')
+ 2 SYSTEMPATH\Common.php(1192): CodeIgniter\View\Cell->render('app\\Cells\\CategoryCell::render', [], 0, 'AppCellsCategoryCellrender40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\header.php(15): view_cell('app\\Cells\\CategoryCell::render')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\partials\\header.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/header', null, true)
+ 7 APPPATH\Views\master.php(31): CodeIgniter\View\View->include('partials/header')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\master.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('master', [], true)
+11 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+12 APPPATH\Controllers\Home.php(14): view('home', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 14:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 14:37:37 --> CodeIgniter\View\Cell::renderSimpleClass(): Return value must be of type string, null returned
+in SYSTEMPATH\View\Cell.php on line 306.
+ 1 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\CategoryCell), 'render', [], 'App\\Cells\\CategoryCell')
+ 2 SYSTEMPATH\Common.php(1192): CodeIgniter\View\Cell->render('app\\Cells\\CategoryCell::render', [], 0, 'AppCellsCategoryCellrender40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\header.php(15): view_cell('app\\Cells\\CategoryCell::render')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\partials\\header.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/header', null, true)
+ 7 APPPATH\Views\master.php(31): CodeIgniter\View\View->include('partials/header')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\master.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('master', [], true)
+11 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+12 APPPATH\Controllers\Home.php(14): view('home', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 14:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 14:37:39 --> CodeIgniter\View\Cell::renderSimpleClass(): Return value must be of type string, null returned
+in SYSTEMPATH\View\Cell.php on line 306.
+ 1 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\CategoryCell), 'render', [], 'App\\Cells\\CategoryCell')
+ 2 SYSTEMPATH\Common.php(1192): CodeIgniter\View\Cell->render('app\\Cells\\CategoryCell::render', [], 0, 'AppCellsCategoryCellrender40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\header.php(15): view_cell('app\\Cells\\CategoryCell::render')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\partials\\header.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/header', null, true)
+ 7 APPPATH\Views\master.php(31): CodeIgniter\View\View->include('partials/header')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\master.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('master', [], true)
+11 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+12 APPPATH\Controllers\Home.php(14): view('home', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 15:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-06 15:32:10 --> CodeIgniter\View\Cell::renderSimpleClass(): Return value must be of type string, null returned
+in SYSTEMPATH\View\Cell.php on line 306.
+ 1 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderSimpleClass(Object(App\Cells\CategoryCell), 'render', [], 'App\\Cells\\CategoryCell')
+ 2 SYSTEMPATH\Common.php(1192): CodeIgniter\View\Cell->render('app\\Cells\\CategoryCell::render', [], 0, 'AppCellsCategoryCellrender40cd750bba9870f18aada2478b24840a')
+ 3 APPPATH\Views\partials\header.php(15): view_cell('app\\Cells\\CategoryCell::render')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\partials\\header.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('partials/header', null, true)
+ 7 APPPATH\Views\master.php(31): CodeIgniter\View\View->include('partials/header')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\ci4curso\\app\\Views\\master.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('master', [], true)
+11 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('home', [], true)
+12 APPPATH\Controllers\Home.php(14): view('home', [...])
+13 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+14 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+15 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-06 15:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-06 16:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

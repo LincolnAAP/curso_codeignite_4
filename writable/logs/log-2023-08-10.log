@@ -1,0 +1,18 @@
+CRITICAL - 2023-08-10 14:13:17 --> Invalid file: "fetch/_bannerHomme.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fetch/_bannerHomme.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('fetch/_bannerHomme', [], true)
+ 3 APPPATH\Controllers\BannerHome.php(11): view('fetch/_bannerHomme')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BannerHome->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BannerHome))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-10 14:13:29 --> Invalid file: "/fetch/_bannerHomme.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/fetch/_bannerHomme.php')
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('/fetch/_bannerHomme', [], true)
+ 3 APPPATH\Controllers\BannerHome.php(11): view('/fetch/_bannerHomme')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\BannerHome->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BannerHome))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
